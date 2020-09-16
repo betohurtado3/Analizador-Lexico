@@ -15,7 +15,8 @@ class Archivo
         void Aregar();
         void leer();
         void modificar();
-        void buscar();
+        bool buscar(string buscando);
+        void mostrar();
 
     protected:
 

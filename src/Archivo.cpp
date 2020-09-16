@@ -29,22 +29,20 @@ void Archivo::Aregar()
     archivo.close();
 }
 
-void Archivo :: buscar()
+bool Archivo :: buscar(string buscando)
 {
     bool bandera=false;
     int i,campo;
 	string auxiliar;
 	string total;
 	ifstream Lectura("Diccionario.txt");
+	bool respuesta;
 	if(!Lectura.good())
 	{
 		cout<<"\nFile Doesn't exit ";
 	}
 	else
     {
-        string buscando;
-        cout<<"Type Something: "<<endl;
-        getline(cin, buscando);
         while(getline(Lectura,auxiliar))
         {
             campo = 0;
@@ -70,13 +68,20 @@ void Archivo :: buscar()
             if(buscando == entrada)
             {
                 bandera=true;
-                cout<<"----------------------------------------------------"<<endl;
-                cout<<entrada<<": "<<definicion<<endl;
-                cout<<"----------------------------------------------------"<<endl;
+                respuesta = true;
+                break;
             }
         }
         if(bandera==false)
-            cout<<"\ninput not recognized \n "<<endl;
+            respuesta = false;;
     }
     Lectura.close();
+    return respuesta;
+}
+
+void Archivo:: mostrar()
+{
+    cout<<"----------------------------------------------------"<<endl;
+    cout<<entrada<<": "<<definicion<<endl;
+    cout<<"----------------------------------------------------"<<endl;
 }

@@ -4,8 +4,6 @@ char|tipo de dato caracter|
 void|valor nulo|
 cin|leer variable|
 cou|impresion en pantalla|
-{|inicio del programa o bloque|
-}|fin del programa o bloque|
 if|estructura selectiva|
 else|parte false de la selectiva|
 switch|estructura selectiva multiple|
@@ -16,3 +14,6 @@ for|estructura repetitiva|
 while|estructura repetitiva|
 do|estructura repetitiva|
 return|regresa valor a una funcion|
+{|inicio del programa o bloque|
+}|fin del programa o bloque|
+;|fin de linea de codigo|

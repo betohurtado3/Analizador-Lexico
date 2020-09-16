@@ -14,3 +14,21 @@
 1600287040 c:\users\betoh\desktop\nueva carpeta (2)\analizador\include\archivo.h
 	<string>
 
+1600292768 source:c:\users\jucal\documents\cucei\8_semestre\seminario de traductores\analizador-lexico\main.cpp
+	<iostream>
+	<string>
+	<sstream>
+	<fstream>
+	<ctype.h>
+	<stdio.h>
+	"Archivo.h"
+
+1600292204 c:\users\jucal\documents\cucei\8_semestre\seminario de traductores\analizador-lexico\include\archivo.h
+	<string>
+
+1600292300 source:c:\users\jucal\documents\cucei\8_semestre\seminario de traductores\analizador-lexico\src\archivo.cpp
+	"Archivo.h"
+	<string.h>
+	<fstream>
+	<iostream>
+
