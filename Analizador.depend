@@ -1,0 +1,16 @@
+# depslib dependency file v1.0
+1600287602 source:c:\users\betoh\desktop\nueva carpeta (2)\analizador\main.cpp
+	<iostream>
+	<string>
+	<fstream>
+	"Archivo.h"
+
+1600288258 source:c:\users\betoh\desktop\nueva carpeta (2)\analizador\src\archivo.cpp
+	"Archivo.h"
+	<string.h>
+	<fstream>
+	<iostream>
+
+1600287040 c:\users\betoh\desktop\nueva carpeta (2)\analizador\include\archivo.h
+	<string>
+
