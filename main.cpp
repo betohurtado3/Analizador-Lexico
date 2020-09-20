@@ -19,18 +19,26 @@ bool TryParse(string input, T & var)
     stringstream buffer(input);
     return buffer >> var && buffer.eof();
 }
+
+///Funcion para convertir la variable introducida a numerica cuando es requerida
+
+
 int main()
 {
     Archivo file;
+
     string buscando;
     int n; // variable auxiliar para saber si entrada es numerica
-    cout<<"Type Something: ";
+
+
+    cout<<"Type Something: ";  ///El usuario ingresara una entrada
     getline(cin, buscando);
 
-    if(file.buscar(buscando)){
-        file.mostrar();
+    if(file.buscar(buscando)){ ///Ejecucion de la funcion para buscar dentro del archivo
+        file.mostrar(); ///Si la entrada del usuario se encuentra, se arrojara la informacion.
     }
-    else if(TryParse(buscando, n)){
+    ///si la entrada del usuario no se encuentra dentro del archivo pasara a analizarse dentro de las siguientes comparaciones:
+    else if(TryParse(buscando, n)){ ///La variable se convierte en un numero, y se verifica
         cout<<"----------------------------------------------------"<<endl;
         cout<<buscando<<": "<<"Es un dato numerico"<<endl;
         cout<<"----------------------------------------------------"<<endl;
@@ -61,8 +69,6 @@ int main()
         cout<<buscando<<": "<<"Es dato no identificado"<<endl;
         cout<<"----------------------------------------------------"<<endl;
     }
-
-
 }
 
 

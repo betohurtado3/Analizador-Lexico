@@ -32,3 +32,21 @@
 	<fstream>
 	<iostream>
 
+1600616138 source:/Users/betohurtado3/Desktop/Analizador-Lexico/main.cpp
+	<iostream>
+	<string>
+	<sstream>
+	<fstream>
+	<ctype.h>
+	<stdio.h>
+	"Archivo.h"
+
+1600616138 /Users/betohurtado3/Desktop/Analizador-Lexico/include/Archivo.h
+	<string>
+
+1600616138 source:/Users/betohurtado3/Desktop/Analizador-Lexico/src/Archivo.cpp
+	"Archivo.h"
+	<string.h>
+	<fstream>
+	<iostream>
+
